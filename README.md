@@ -29,16 +29,16 @@ This software was compiled with gdc 4.6.3, and tested on some machines using Ubu
 
 ### Examples
 - Execute a simulation of 100 years with a DeltaT of a 1 day of our solar system fixing the Sun in the (0,0,0) position
-        ./nBodySim --input ssolar.sim --center 0 --output ssolar.out
+        ```./nBodySim --input ssolar.sim --center 0 --output ssolar.out```
 - Execute a simulation of 10000 years with a DeltaT of 100 days of a ranmdon set of 500 stars
-        ./nBodySim --rand 500 -d8640000 --output rand.out
+        ```./nBodySim --rand 500 -d8640000 --output rand.out```
 
 ## Output files
 For the moment, nBodySim it's outputing files that are compatible with [GnuPlot](http://www.gnuplot.info/), where in a row we can found the position of *every* object in the simulation for a determinated moment ofthe simulation.
 It's easy to plot hte data using 'splot' command of gnuplot, but be carefull about how many points (rows) are stored in the file, becasue GnuPlot can be easily swamped. I recomend using --points to skip points to be stored in the output file, and keep it easy to hnadle for the gnuplot at same tiem that allow to run long (big number of iterations).
 ### Examples
 - View the output data of the simulation of our solar system
-        set zrange [-8e+12:8e12]
+```        set zrange [-8e+12:8e12]
         set title "Solar System : 100 years"
         splot "ssolar.out" u 1:2:3 t "Sun", \
         "ssolar.out" u 4:5:6 w dots t "Mercury", \
@@ -55,7 +55,7 @@ It's easy to plot hte data using 'splot' command of gnuplot, but be carefull abo
         "ssolar.out" u 37:38:39 w dots t "Haumea", \
         "ssolar.out" u 40:41:42 w dots t "Makemake", \
         "ssolar.out" u 43:44:45 w dots t "Eris"
-
+```
 
 ## TODO
 
