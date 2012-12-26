@@ -38,24 +38,23 @@ For the moment, nBodySim it's outputing files that are compatible with [GnuPlot]
 It's easy to plot hte data using 'splot' command of gnuplot, but be carefull about how many points (rows) are stored in the file, becasue GnuPlot can be easily swamped. I recomend using --points to skip points to be stored in the output file, and keep it easy to hnadle for the gnuplot at same tiem that allow to run long (big number of iterations).
 ### Examples
 - View the output data of the simulation of our solar system
-```        set zrange [-8e+12:8e12]
-        set title "Solar System : 100 years"
-        splot "ssolar.out" u 1:2:3 t "Sun", \
-        "ssolar.out" u 4:5:6 w dots t "Mercury", \
-        "ssolar.out" u 7:8:9 w dots t "Venus", \
-        "ssolar.out" u 10:11:12 w dots t "Earth", \
-        "ssolar.out" u 13:14:15 w dots t "Moon", \
-        "ssolar.out" u 16:17:18 w dots t "Mars", \
-        "ssolar.out" u 19:20:21 w dots t "Jupiter", \
-        "ssolar.out" u 22:23:24 w dots t "Saturn", \
-        "ssolar.out" u 25:26:27 w dots t "Uranus", \
-        "ssolar.out" u 28:29:30 w dots t "Neptune", \
-        "ssolar.out" u 31:32:33 w dots t "Ceres", \
-        "ssolar.out" u 34:35:36 w dots t "Pluto", \
-        "ssolar.out" u 37:38:39 w dots t "Haumea", \
-        "ssolar.out" u 40:41:42 w dots t "Makemake", \
-        "ssolar.out" u 43:44:45 w dots t "Eris"
-```
+```set zrange [-8e+12:8e12]
+set title "Solar System : 100 years"
+splot "ssolar.out" u 1:2:3 t "Sun", \
+"ssolar.out" u 4:5:6 w dots t "Mercury", \
+"ssolar.out" u 7:8:9 w dots t "Venus", \
+"ssolar.out" u 10:11:12 w dots t "Earth", \
+"ssolar.out" u 13:14:15 w dots t "Moon", \
+"ssolar.out" u 16:17:18 w dots t "Mars", \
+"ssolar.out" u 19:20:21 w dots t "Jupiter", \
+"ssolar.out" u 22:23:24 w dots t "Saturn", \
+"ssolar.out" u 25:26:27 w dots t "Uranus", \
+"ssolar.out" u 28:29:30 w dots t "Neptune", \
+"ssolar.out" u 31:32:33 w dots t "Ceres", \
+"ssolar.out" u 34:35:36 w dots t "Pluto", \
+"ssolar.out" u 37:38:39 w dots t "Haumea", \
+"ssolar.out" u 40:41:42 w dots t "Makemake", \
+"ssolar.out" u 43:44:45 w dots t "Eris"```
 
 ## TODO
 
