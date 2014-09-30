@@ -5,9 +5,10 @@ nBodySim is a small simulator programa capable of handling huge number of bodies
 This software was compiled with gdc 4.6.3 and dmd 2.0.65,  and tested on some machines using Ubuntu x64 14.04, 12.04, 12.10 and Linux ROCKS 6.0 x64.
 
 To build it, use DUB. So do a simple :
+    
     dub build=release
 
-It will generate the program using parallel for. If you like  to compare with athe serial version, you can launch dub with --configure=nBodySim-serial
+It will generate the program using parallel for. If you like  to compare with athe serial version, you can launch dub with ```--configure=nBodySim-serial```
 
 ## Usage
     ./nBodySim [OPTION]...
@@ -31,6 +32,8 @@ It will generate the program using parallel for. If you like  to compare with at
                                     Useful to centre around a particular entity,
                                     like the Sun
 - -h, --help                        Show this help
+ 
+**Note** : If it is used without any option, will try to open ssolar.sim file
 
 ### Examples
 - Execute a simulation of 100 years with a DeltaT of a 1 day of our solar system fixing the Sun in the (0,0,0) position
