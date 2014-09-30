@@ -25,7 +25,7 @@ struct Entity {
    *    vel = Velocity Vector
    *    DeltaT = Delta of Time (t0 - t-1) for the previous position, in seconds
    */
-  public this (double mass, ref Vector3 pos, ref Vector3 vel, double DeltaT) {
+  public this (double mass, Vector3 pos,  Vector3 vel, double DeltaT) {
     this.mass = mass;
 
     this.pos[0] = pos;

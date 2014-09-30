@@ -1,0 +1,18 @@
+{
+  "name": "nBodySim",
+  "description": "A multicore n Body problem simulator",
+  "authors": ["Luis Panadero Guardeño"],
+  "homepage": "https://github.com/Zardoz89/nBodySim",
+  "license": "GPL-3.0",
+  "configurations": [
+    {
+      "name": "nBodySim",
+      "targetType": "executable",
+      "versions": ["PFor"]
+    },
+    {
+      "name": "nBodySim-serial",
+      "targetType": "executable"
+    }
+  ]
+}
