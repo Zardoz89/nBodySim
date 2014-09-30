@@ -1,5 +1,5 @@
 {
-  "name": "nBodySim",
+  "name": "nbodysim",
   "description": "A multicore n Body problem simulator",
   "authors": ["Luis Panadero Guardeño"],
   "homepage": "https://github.com/Zardoz89/nBodySim",
