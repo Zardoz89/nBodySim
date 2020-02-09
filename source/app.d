@@ -9,6 +9,7 @@
 import std.stdio, std.math, std.datetime, std.random;
 import std.getopt, std.conv, std.string;
 import std.parallelism, std.algorithm, std.range;
+import core.stdc.stdlib;
 
 import vector, entity;
 
@@ -59,7 +60,7 @@ r"  -i, --input=FILE                  Input file with initial positions and velo
                                     Useful to centre around a particular entity,
                                     like the Sun
   -h, --help                        Show this help");
-    std.c.stdlib.exit(0);
+    exit(0);
   }
 
   // Get parameters with getopt
@@ -79,18 +80,18 @@ r"  -i, --input=FILE                  Input file with initial positions and velo
   // Sanitation of parameters
   if (TIter <= 0) {
     writeln("Invalid number of iterations ", TIter);
-    std.c.stdlib.exit(-1);
+    exit(-1);
   }
 
   if (DeltaT <= 0) {
     writeln("Invalid value of Delta of Time ", DeltaT);
-    std.c.stdlib.exit(-1);
+    exit(-1);
   }
 
   if (NPoints <= 0) {
     writeln("Invalid value N Points ", NPoints);
     writeln("Remember that 1 means that all points are stored in output file");
-    std.c.stdlib.exit(-1);
+    exit(-1);
   }
 
   // Opens output file

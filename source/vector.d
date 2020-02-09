@@ -27,7 +27,7 @@ public struct Vector3 {
    * auto v3 = new Vector3(10,20);        // (10, 20,  0)
    * auto v4 = nec Vector4(10,20,30);     // (10, 20, 30)
    */
-  this (double x = 0, double y = 0, double z = 0) {
+  this (double x, double y, double z) {
     X = x;
     Y = y;
     Z = z;
