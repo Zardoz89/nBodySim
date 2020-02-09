@@ -1,8 +1,8 @@
 #!/bin/bash
 
-times=5
+times=25
 iter=10
-randBodies=1000
+randBodies=10000
 seed=123
 echo "Running $times nBodySim with this values :"
 echo "./nbodysim -n$iter --rand $randBodies --seed $seed"

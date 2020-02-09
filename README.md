@@ -5,7 +5,7 @@ nBodySim is a small simulator programa capable of handling huge number of bodies
 This software was compiled with gdc 4.6.3 and dmd 2.0.65,  and tested on some machines using Ubuntu x64 14.04, 12.04, 12.10 and Linux ROCKS 6.0 x64.
 
 To build it, use DUB. So do a simple :
-    
+
     dub build=release
 
 It will generate the program using parallel for. If you like  to compare with athe serial version, you can launch dub with ```--configure=nBodySim-serial```
@@ -32,7 +32,7 @@ It will generate the program using parallel for. If you like  to compare with at
                                     Useful to centre around a particular entity,
                                     like the Sun
 - -h, --help                        Show this help
- 
+
 **Note** : If it is used without any option, will try to open ssolar.sim file
 
 ### Examples
@@ -96,6 +96,7 @@ ParallelFor = 1745 ms -> SpeedUp = 2.92
 Bodies : 10000
 Serial = 57726 ms
 ParallelFor = 20023 ms -> SpeedUp = 2.88
+~72% of max teorical speedup
 
 
 Opteron 16-core times :
@@ -111,6 +112,21 @@ ParallelFor = 474 ms -> SpeedUp = 12,83
 Bodies : 10000
 Serial = 69728: ms
 ParallelFor = 5232 ms -> SpeedUp = 13,32
+~83.25% of max teorical speedup
+
+
+FX-8370E overcloked at 3.6Ghz . dmd 2.090
+Bodies : 1000
+Serial = 119ms
+ParallelFor = 19ms -> SpeedUp = 6,26
+
+Bodies : 3000
+Serial = 1078ms
+ParallelFor = 168ms -> SpeedUp = 6,41
+
+Bodies : 10000
+Serial = 11945ms
+ParallelFor = 1841ms -> SpeedUp = 6,48
 
 
 With 1000 iterations :
@@ -124,6 +140,7 @@ ParallelFor = 234 ms -> SpeedUp = 2,44
 Bodies : 1000
 Serial = 57373 ms
 ParallelFor = 19987 ms -> SpeedUp = 2,87
+~71.75% of max teorical speedup
 
 
 Opteron 16-core times :
@@ -135,5 +152,20 @@ ParallelFor = 296 ms -> SpeedUp = 2,28
 Bodies : 1000
 Serial = 67505 ms
 ParallelFor = 5921 ms -> SpeedUp = 11,40
+~71.25% of max teorical speedup
 
+
+FX-8370E overcloked at 3.6Ghz . dmd 2.090
+
+Bodies : 100
+Serial = 600ms
+ParallelFor = 129ms -> SpeedUp = 4,651
+
+Bodies : 1000
+Serial = 60063ms
+ParallelFor = 9314ms -> SpeedUp = 6,448
+~80% of max teorical speedup
+
+Bodies : 3000
+ParallelFor = 83770ms
 
