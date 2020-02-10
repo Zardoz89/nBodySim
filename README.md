@@ -8,7 +8,7 @@ To build it, use DUB. So do a simple :
 
     dub build=release
 
-It will generate the program using parallel for. If you like  to compare with athe serial version, you can launch dub with ```--configure=nBodySim-serial```
+It will generate the program using parallel for. If you like  to compare with the serial version, you can launch dub with ```--configure=nBodySim-serial```
 
 ## Usage
     ./nBodySim [OPTION]...
@@ -128,6 +128,20 @@ Bodies : 10000
 Serial = 11945ms
 ParallelFor = 1841ms -> SpeedUp = 6,48
 
+R7 3700x
+Bodies : 1000
+Serial = 43ms
+ParallelFor = 5ms
+
+Bodies : 3000
+Serial = 387ms
+ParallelFor = 35ms
+
+Bodies : 10000
+Serial = 4320ms
+ParallelFor = 376ms -> SpeedUp = 11.48
+~71% of max teorical speedup
+
 
 With 1000 iterations :
 
@@ -169,3 +183,11 @@ ParallelFor = 9314ms -> SpeedUp = 6,448
 Bodies : 3000
 ParallelFor = 83770ms
 
+R7 3700x
+Bodies : 100
+Serial = 220ms
+ParallelFor = 42ms
+
+Bodies : 1000
+Serial = 21886ms
+ParallelFor = 2087ms -> SpeedUp = 10.48
