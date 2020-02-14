@@ -81,7 +81,7 @@ splot "ssolar.out" u 1:2:3 t "Sun", \
 
 ## Benchmark data
 
-10 iterations :
+### 10 iterations :
 
 FX-4100 quad core times :
 
@@ -142,8 +142,22 @@ Serial = 4320ms
 ParallelFor = 376ms -> SpeedUp = 11.48
 ~71% of max teorical speedup
 
+i7-6700 4 core 8 threads
+Bodies : 1000
+Serial = 212ms
+ParallelFor = 39ms 
 
-With 1000 iterations :
+Bodies : 3000
+Serial = 1868ms
+ParallelFor = 354ms 
+
+Bodies : 10000
+Serial = 20745ms
+ParallelFor = 3761ms -> SpeedUp = 5,52 
+~69% of max teorical speedup
+
+
+### With 1000 iterations :
 
 FX-4100 quad core times :
 
@@ -183,7 +197,7 @@ ParallelFor = 9314ms -> SpeedUp = 6,448
 Bodies : 3000
 ParallelFor = 83770ms
 
-R7 3700x
+R7 3700x 8 core 16 threads
 Bodies : 100
 Serial = 220ms
 ParallelFor = 42ms
@@ -191,3 +205,13 @@ ParallelFor = 42ms
 Bodies : 1000
 Serial = 21886ms
 ParallelFor = 2087ms -> SpeedUp = 10.48
+
+i7-6700 4 core 8 threads
+Bodies : 100
+Serial = 210ms 
+ParallelFor = 60ms 
+
+Bodies : 1000
+Serial = 20706ms 
+ParallelFor = 3852ms -> SpeedUp = 5.37
+~67% of max teorical speedup
