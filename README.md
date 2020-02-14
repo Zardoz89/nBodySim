@@ -116,6 +116,7 @@ Opteron 16-core times :
 
 
 FX-8370E overcloked at 3.6Ghz . dmd 2.090
+
     Bodies : 1000
     Serial = 119ms
     ParallelFor = 19ms -> SpeedUp = 6,26
@@ -129,6 +130,7 @@ FX-8370E overcloked at 3.6Ghz . dmd 2.090
     ParallelFor = 1841ms -> SpeedUp = 6,48
 
 R7 3700x
+
     Bodies : 1000
     Serial = 43ms
     ParallelFor = 5ms
@@ -143,6 +145,7 @@ R7 3700x
     ~71% of max teorical speedup
 
 i7-6700 4 core 8 threads
+
     Bodies : 1000
     Serial = 212ms
     ParallelFor = 39ms 
