@@ -85,133 +85,135 @@ splot "ssolar.out" u 1:2:3 t "Sun", \
 
 FX-4100 quad core times :
 
-Bodies : 1000
-Serial = 573 ms
-ParallelFor = 192 ms -> SpeedUp = 2.98
+    Bodies : 1000
+    Serial = 573 ms
+    ParallelFor = 192 ms -> SpeedUp = 2.98
 
-Bodies : 3000
-Serial = 5106 ms
-ParallelFor = 1745 ms -> SpeedUp = 2.92
+    Bodies : 3000
+    Serial = 5106 ms
+    ParallelFor = 1745 ms -> SpeedUp = 2.92
 
-Bodies : 10000
-Serial = 57726 ms
-ParallelFor = 20023 ms -> SpeedUp = 2.88
-~72% of max teorical speedup
+    Bodies : 10000
+    Serial = 57726 ms
+    ParallelFor = 20023 ms -> SpeedUp = 2.88
+    ~72% of max teorical speedup
 
 
 Opteron 16-core times :
 
-Bodies : 1000
-Serial =  682 ms
-ParallelFor = 67 ms -> SpeedUp = 10,12
+    Bodies : 1000
+    Serial =  682 ms
+    ParallelFor = 67 ms -> SpeedUp = 10,12
 
-Bodies : 3000
-Serial = 6083 ms
-ParallelFor = 474 ms -> SpeedUp = 12,83
+    Bodies : 3000
+    Serial = 6083 ms
+    ParallelFor = 474 ms -> SpeedUp = 12,83
 
-Bodies : 10000
-Serial = 69728: ms
-ParallelFor = 5232 ms -> SpeedUp = 13,32
-~83.25% of max teorical speedup
+    Bodies : 10000
+    Serial = 69728: ms
+    ParallelFor = 5232 ms -> SpeedUp = 13,32
+    ~83.25% of max teorical speedup
 
 
 FX-8370E overcloked at 3.6Ghz . dmd 2.090
-Bodies : 1000
-Serial = 119ms
-ParallelFor = 19ms -> SpeedUp = 6,26
+    Bodies : 1000
+    Serial = 119ms
+    ParallelFor = 19ms -> SpeedUp = 6,26
 
-Bodies : 3000
-Serial = 1078ms
-ParallelFor = 168ms -> SpeedUp = 6,41
+    Bodies : 3000
+    Serial = 1078ms
+    ParallelFor = 168ms -> SpeedUp = 6,41
 
-Bodies : 10000
-Serial = 11945ms
-ParallelFor = 1841ms -> SpeedUp = 6,48
+    Bodies : 10000
+    Serial = 11945ms
+    ParallelFor = 1841ms -> SpeedUp = 6,48
 
 R7 3700x
-Bodies : 1000
-Serial = 43ms
-ParallelFor = 5ms
+    Bodies : 1000
+    Serial = 43ms
+    ParallelFor = 5ms
 
-Bodies : 3000
-Serial = 387ms
-ParallelFor = 35ms
+    Bodies : 3000
+    Serial = 387ms
+    ParallelFor = 35ms
 
-Bodies : 10000
-Serial = 4320ms
-ParallelFor = 376ms -> SpeedUp = 11.48
-~71% of max teorical speedup
+    Bodies : 10000
+    Serial = 4320ms
+    ParallelFor = 376ms -> SpeedUp = 11.48
+    ~71% of max teorical speedup
 
 i7-6700 4 core 8 threads
-Bodies : 1000
-Serial = 212ms
-ParallelFor = 39ms 
+    Bodies : 1000
+    Serial = 212ms
+    ParallelFor = 39ms 
 
-Bodies : 3000
-Serial = 1868ms
-ParallelFor = 354ms 
+    Bodies : 3000
+    Serial = 1868ms
+    ParallelFor = 354ms 
 
-Bodies : 10000
-Serial = 20745ms
-ParallelFor = 3761ms -> SpeedUp = 5,52 
-~69% of max teorical speedup
+    Bodies : 10000
+    Serial = 20745ms
+    ParallelFor = 3761ms -> SpeedUp = 5,52 
+    ~69% of max teorical speedup
 
 
 ### With 1000 iterations :
 
 FX-4100 quad core times :
 
-Bodies : 100
-Serial = 571 ms
-ParallelFor = 234 ms -> SpeedUp = 2,44
+    Bodies : 100
+    Serial = 571 ms
+    ParallelFor = 234 ms -> SpeedUp = 2,44
 
-Bodies : 1000
-Serial = 57373 ms
-ParallelFor = 19987 ms -> SpeedUp = 2,87
-~71.75% of max teorical speedup
+    Bodies : 1000
+    Serial = 57373 ms
+    ParallelFor = 19987 ms -> SpeedUp = 2,87
+    ~71.75% of max teorical speedup
 
 
 Opteron 16-core times :
 
-Bodies : 100
-Serial = 676 ms
-ParallelFor = 296 ms -> SpeedUp = 2,28
+    Bodies : 100
+    Serial = 676 ms
+    ParallelFor = 296 ms -> SpeedUp = 2,28
 
-Bodies : 1000
-Serial = 67505 ms
-ParallelFor = 5921 ms -> SpeedUp = 11,40
-~71.25% of max teorical speedup
+    Bodies : 1000
+    Serial = 67505 ms
+    ParallelFor = 5921 ms -> SpeedUp = 11,40
+    ~71.25% of max teorical speedup
 
 
 FX-8370E overcloked at 3.6Ghz . dmd 2.090
 
-Bodies : 100
-Serial = 600ms
-ParallelFor = 129ms -> SpeedUp = 4,651
+    Bodies : 100
+    Serial = 600ms
+    ParallelFor = 129ms -> SpeedUp = 4,651
 
-Bodies : 1000
-Serial = 60063ms
-ParallelFor = 9314ms -> SpeedUp = 6,448
-~80% of max teorical speedup
+    Bodies : 1000
+    Serial = 60063ms
+    ParallelFor = 9314ms -> SpeedUp = 6,448
+    ~80% of max teorical speedup
 
-Bodies : 3000
-ParallelFor = 83770ms
+    Bodies : 3000
+    ParallelFor = 83770ms
 
 R7 3700x 8 core 16 threads
-Bodies : 100
-Serial = 220ms
-ParallelFor = 42ms
 
-Bodies : 1000
-Serial = 21886ms
-ParallelFor = 2087ms -> SpeedUp = 10.48
+    Bodies : 100
+    Serial = 220ms
+    ParallelFor = 42ms
+
+    Bodies : 1000
+    Serial = 21886ms
+    ParallelFor = 2087ms -> SpeedUp = 10.48
 
 i7-6700 4 core 8 threads
-Bodies : 100
-Serial = 210ms 
-ParallelFor = 60ms 
 
-Bodies : 1000
-Serial = 20706ms 
-ParallelFor = 3852ms -> SpeedUp = 5.37
-~67% of max teorical speedup
+    Bodies : 100
+    Serial = 210ms 
+    ParallelFor = 60ms 
+
+    Bodies : 1000
+    Serial = 20706ms 
+    ParallelFor = 3852ms -> SpeedUp = 5.37
+    ~67% of max teorical speedup
